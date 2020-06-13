@@ -2,9 +2,10 @@
 
 echo -e "\033[33m[!]\033[0m Start program install!"
 
-programs="nvidia redshift rxvt-unicode openvpn p7zip xdotool xbindkeys flameshot brightnessctl zsh i3"
+programs="nvidia redshift rxvt-unicode openvpn p7zip xdotool xbindkeys flameshot obs-studio brightnessctl zsh i3"
+add="clang rsync discord firefox handbrake rsnapshot"
 home="/home/zkerriga/"
-pacman -S $programs
+pacman -S $programs $add
 
 cp x/.xinitrc $home
 cp x/.Xauthority $home
@@ -20,5 +21,9 @@ cp confs/.drirc $home
 cp confs/.gitconfig $home
 cp etc/krb5.conf /etc/
 cp etc/i3status.conf /etc/
+
+cp /etc/rsnapshot.conf /etc/rsnapshot.conf.default
+cp conf/rsnapshot.conf /etc/rsnapshot.conf
+cp service/rsnapshot* /etc/systemd/system/
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
