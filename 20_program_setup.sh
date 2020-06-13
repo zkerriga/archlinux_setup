@@ -3,7 +3,7 @@
 echo -e "\033[33m[!]\033[0m Start program install!"
 
 programs="nvidia redshift rxvt-unicode openvpn p7zip xdotool xbindkeys flameshot obs-studio brightnessctl zsh i3"
-add="clang rsync discord firefox handbrake rsnapshot"
+add="clang rsync discord firefox handbrake rsnapshot telegram-desktop"
 home="/home/zkerriga/"
 pacman -S $programs $add
 
