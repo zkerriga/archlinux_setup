@@ -1,0 +1,12 @@
+[user]
+	name = zkerriga
+	email = daniil.63@yandex.ru
+[core]
+	autocrlf = input
+	safecrlf = warn
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
