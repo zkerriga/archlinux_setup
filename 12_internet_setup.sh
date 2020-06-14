@@ -10,5 +10,7 @@ iptables -t mangle -A POSTROUTING -j TTL --ttl-set 65
 
 cp netctl/panarchynet	/etc/netctl/
 
+rfkill unblock all
+ip link set wlp7s0 down
 netctl start panarchynet
 

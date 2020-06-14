@@ -3,7 +3,7 @@
 echo -e "\033[33m[!]\033[0m Start program install!"
 
 programs="nvidia redshift rxvt-unicode openvpn p7zip xdotool flameshot obs-studio brightnessctl zsh i3 xorg-xinit"
-add="clang rsync discord firefox handbrake rsnapshot telegram-desktop alsa-utils"
+add="clang rsync discord firefox handbrake rsnapshot telegram-desktop alsa-utils pulseaudio-alsa jupyter-notebook"
 home="/home/zkerriga/"
 pacman -S $programs $add
 
@@ -25,5 +25,7 @@ cp etc/i3status.conf	/etc/
 cp /etc/rsnapshot.conf	/etc/rsnapshot.conf.default
 cp confs/rsnapshot.conf	/etc/rsnapshot.conf
 cp service/rsnapshot*	/etc/systemd/system/
+
+cp confs/config		~/.config/i3/
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
