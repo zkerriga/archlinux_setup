@@ -2,6 +2,9 @@
 
 opt=/home/zkerriga/opt
 
+another="libx11 python autoconf-archive"
+sudo pacman -S $another
+
 mkdir $opt
 
 git clone https://aur.archlinux.org/thermald.git		$opt/termald
