@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Start with sudo!
+
 echo -e "\033[33m[!]\033[0m Start program install!"
 
 programs="nvidia redshift rxvt-unicode openvpn p7zip xdotool flameshot obs-studio brightnessctl zsh i3 xorg-xinit"
@@ -28,4 +30,13 @@ cp service/rsnapshot*	/etc/systemd/system/
 
 cp confs/config		~/.config/i3/
 
+curl -O https://download.sublimetext.com/sublimehq-pub.gpg && pacman-key --add sublimehq-pub.gpg && pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
+echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | tee -a /etc/pacman.conf
+pacman -Sy sublime-text
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+su zkerriga
+
+cp -r /root/.oh-my-zsh	$home
+cp confs/.zshrc			$home
+chsh -s /usr/bin/zsh
