@@ -11,3 +11,4 @@ iptables -t mangle -A POSTROUTING -j TTL --ttl-set 65
 cp netctl/panarchynet	/etc/netctl/
 
 netctl start panarchynet
+
