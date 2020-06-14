@@ -23,7 +23,7 @@ cp etc/krb5.conf		/etc/
 cp etc/i3status.conf	/etc/
 
 cp /etc/rsnapshot.conf	/etc/rsnapshot.conf.default
-cp conf/rsnapshot.conf	/etc/rsnapshot.conf
+cp confs/rsnapshot.conf	/etc/rsnapshot.conf
 cp service/rsnapshot*	/etc/systemd/system/
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

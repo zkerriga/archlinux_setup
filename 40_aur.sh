@@ -1,10 +1,10 @@
 #!/bin/bash
 
-opt=/home/zkerriga/opt/
+opt=/home/zkerriga/opt
 
 mkdir $opt
 
-git clone https://aur.archlinux.org/thermald.git		$opt
-git clone https://aur.archlinux.org/clion.git			$opt
-git clone https://aur.archlinux.org/zoom.git			$opt
-git clone https://aur.archlinux.org/slack-desktop.git	$opt
+git clone https://aur.archlinux.org/thermald.git		$opt/termald
+git clone https://aur.archlinux.org/clion.git			$opt/clion
+git clone https://aur.archlinux.org/zoom.git			$opt/zoom
+git clone https://aur.archlinux.org/slack-desktop.git	$opt/slack-desctop
