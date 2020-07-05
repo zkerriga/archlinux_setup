@@ -1,0 +1,9 @@
+[Unit]
+Description=Turn off NVIDIA card
+
+[Service]
+ExecStart=sudo /usr/sbin/turn_off_gpu.sh
+
+[Install]
+WantedBy=multi-user.target
+

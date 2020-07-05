@@ -1,0 +1,18 @@
+Description='A simple WPA encrypted wireless connection'
+Interface=wlp7s0
+Connection=wireless
+
+Security=wpa
+IP=dhcp
+
+ESSID='netis_578B4E'
+# Prepend hexadecimal keys with \"
+# If your key starts with ", write it as '""<key>"'
+# See also: the section on special quoting rules in netctl.profile(5)
+Key='lisenok3000'
+# Uncomment this if your ssid is hidden
+#Hidden=yes
+# Set a priority for automatic profile selection
+#Priority=10
+TimeoutUp=300
+TimeuotCarrier=300

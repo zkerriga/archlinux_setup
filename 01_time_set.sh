@@ -4,4 +4,4 @@ timedatectl set-ntp true
 timedatectl set-timezone Europe/Moscow
 timedatectl status
 
-echo -e "\033[32m[+]\033[0m Time is set!"
+echo -e "\e[32m[+] Time is set!\e[0m"

@@ -1,0 +1,5 @@
+Для создания скрипта по выключению gpu:
+http://www.adminhelp.pro/tips/unix-command/speedhelp-access-rights/284/
+
+Необходимо настроить rsnapshot:
+https://wiki.archlinux.org/index.php/Rsnapshot

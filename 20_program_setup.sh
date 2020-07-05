@@ -2,7 +2,7 @@
 
 # Start with sudo!
 
-echo -e "\033[33m[!]\033[0m Start program install!"
+echo -e "\e[33m[!] Start program install!\e[0m"
 
 programs="nvidia redshift rxvt-unicode openvpn p7zip xdotool flameshot obs-studio brightnessctl zsh i3 xorg-xinit"
 add="clang rsync discord firefox handbrake rsnapshot telegram-desktop alsa-utils pulseaudio-alsa jupyter-notebook"
@@ -23,10 +23,12 @@ cp confs/.drirc			$home
 cp confs/.gitconfig		$home
 cp etc/krb5.conf		/etc/
 cp etc/i3status.conf	/etc/
+cp etc/vimrc			/etc/
 
-cp /etc/rsnapshot.conf	/etc/rsnapshot.conf.default
-cp confs/rsnapshot.conf	/etc/rsnapshot.conf
-cp service/rsnapshot*	/etc/systemd/system/
+cp /etc/rsnapshot.conf			/etc/rsnapshot.conf.default
+cp confs/rsnapshot.conf			/etc/rsnapshot.conf
+cp service/rsnapshot*			/etc/systemd/system/
+cp service/turn-off-gpu.service	/etc/systemd/system/
 
 cp confs/config		~/.config/i3/
 
