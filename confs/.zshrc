@@ -117,3 +117,8 @@ alias vpnr="sudo resolvconf -u"
 alias сдуфк="clear; xdotool key Mode_switch"
 alias ды="ls; xdotool key Mode_switch"
 
+# Git:
+alias gti="git "
+
+# The project-folder:
+alias p="cd /home/zkerriga/21/solo/miniRT"

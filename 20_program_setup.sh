@@ -32,6 +32,10 @@ cp service/turn-off-gpu.service	/etc/systemd/system/
 
 cp confs/config		~/.config/i3/
 
+cp scripts/turn_off_gpu.sh		/usr/sbin/
+chown root:root					/usr/sbin/turn_off_gpu.sh
+chmod 755 						/usr/sbin/turn_off_gpu.sh
+
 curl -O https://download.sublimetext.com/sublimehq-pub.gpg && pacman-key --add sublimehq-pub.gpg && pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
 echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | tee -a /etc/pacman.conf
 pacman -Sy sublime-text
