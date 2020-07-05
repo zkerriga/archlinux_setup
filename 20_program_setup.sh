@@ -5,7 +5,7 @@
 echo -e "\e[33m[!] Start program install!\e[0m"
 
 programs="nvidia redshift rxvt-unicode openvpn p7zip xdotool flameshot obs-studio brightnessctl zsh i3 xorg-xinit"
-add="clang rsync discord firefox handbrake handbrake-cli rsnapshot telegram-desktop alsa-utils pulseaudio-alsa jupyter-notebook"
+add="clang rsync discord firefox handbrake handbrake-cli rsnapshot telegram-desktop alsa-utils pulseaudio-alsa jupyter-notebook acpi_call"
 home="/home/zkerriga/"
 pacman -S $programs $add
 
