@@ -6,7 +6,10 @@ case "$1" in
 		case "$3" in
 			00000087)
 				logger 'Brightness decreased'
-				brightnessctl s 5%-
+				for (( count=0; count<5; count++ )) do
+					brightnessctl s 1%-
+					sleep 0.01
+				done
 				;;
 			*)
                 logger "ACPI action undefined: $2"
@@ -18,7 +21,10 @@ case "$1" in
 		case "$3" in
 			00000086)
 				logger 'Brightness increased'
-				brightnessctl s +5%
+				for (( count=0; count<5; count++ )) do
+					brightnessctl s +1%
+					sleep 0.01
+				done
 				;;
 			*)
                 logger "ACPI action undefined: $2"
